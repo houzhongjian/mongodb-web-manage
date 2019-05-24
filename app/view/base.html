@@ -1,0 +1,148 @@
+{{define "public"}}
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/plugins/jsonFormater/jsonFormater.css">
+        <!-- <link rel="stylesheet" href="/plugins/jspkg-archive/jquery.dynatable.css"> -->
+        <link rel="stylesheet" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+        <title>console</title>   
+        <style>
+            body {
+                background: #fafafa;
+            }
+            .nav {
+                background: #222f3f;
+                color: #ffffff;
+                padding: 0;
+                margin: 0;
+                
+                box-sizing: border-box;
+            }
+            .head {
+                width: 149px;
+                margin: 0 auto;
+                height: 80px;
+                /* margin: 15px; */
+                /* text-align: center; */
+                
+            }
+            .head .icon {
+                float: left;
+                width: 36px;
+                font-size: 36px;
+                line-height: 80px;
+            }
+            .head .title {
+                float: left;
+                width: 93px;
+                font-size: 24px;
+                line-height: 80px;
+                margin-left: 20px;
+            }
+            .desp {
+                width: 100%;
+                height: 40px;
+                line-height: 40px;
+                background: #273545;
+                font-family: Menlo,Monaco,Consolas,"Andale Mono","lucida console","Courier New",monospace;
+                font-size: 1.2em;
+                font-weight: bold;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .db-list {
+                margin: 15px;
+                width: 100%;
+                list-style: none;
+                padding: 0;
+            }
+            .db-list .db-item{
+                width: 100%;
+                height: 35px;
+                line-height: 35px;
+                float: left;
+            }
+            .db-list .db-item i{
+                font-size: 15px;
+                margin-right: 10px;
+            }
+            .content {
+                
+                padding-top: 10px;
+            }
+            .content .coll-list {
+                width: 100%;
+            }
+            .content .coll-list .coll {
+                padding: 15px;
+                font-size: 16px;
+                float: left;
+            }
+            .content .coll-list .coll i {
+                margin-right: 3px;
+            }
+            textarea {
+                /* letter-spacing:1px; */
+                line-height: 1.4em;
+                background-color: #fff;
+                padding: 5px;
+                border: 1px solid #d4d4d4;
+                font-size: 110%;
+                font-family: Menlo,Monaco,Consolas,"Andale Mono","lucida console","Courier New",monospace;
+                word-break: break-all;
+                word-wrap: break-word;
+            }
+            .rows {
+                min-height: 300px;
+            }
+            #my-ajax-table {
+                color: #333333;
+            }
+
+        </style>    
+    </head>
+    {{end}}
+    {{define "nav"}}
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 nav">
+                    <div class="head">
+                        <div class="icon"><i class="fa fa-cube" aria-hidden="true"></i></div>
+                        <div class="title">DbClient</div>
+                    </div>
+                    <div class="desp">Database List</div>
+                    <div class="db-list">
+                        {{range $v := .dblist}}
+                        <div class="db-item">
+                            <div class="db-name"> 
+                                <i class="fa fa-database" aria-hidden="true"></i>
+                                <a href="/database/{{$v}}">{{$v}}</a>
+                            </div>
+                        </div>
+                        {{end}}
+                    </div>
+                </div>
+                {{end}}
+                {{define "content"}}
+                <div class="col-md-10 content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="col-md-12" style="margin-top:10px;">
+                            <button class="btn btn-success">Run</button>
+                            <button class="btn btn-warning">Explain</button>
+                        </div>
+                    </div>
+                </div>
+                {{end}}
+                {{define "footer"}}
+            </div>
+        </div>
+    </body>
+</html>
+{{end}}

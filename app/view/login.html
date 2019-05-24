@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.min.css">
+        <title>WebDbClient for MongoDB</title>
+        <style>
+            .col-center {
+                float: none;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .head {
+                width: 100%;
+                margin-top: 20px;
+                text-align: center;
+            }
+            .head i{
+                font-size: 100px;
+            }
+            .login_form {
+                margin-top: 50px;
+                width: 100%;
+            }
+        </style>        
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-center">
+                    <div class="head">
+                        <i class="fa fa-cube" aria-hidden="true"></i>
+                    </div>
+                    <div class="login_form">
+                        <form class="" method="POST" action="/login">
+                            <div class="form-group">
+                                <label for="host">服务器地址</label>
+                                <input type="text" name="host" value="127.0.0.1" class="form-control" id="host" placeholder="Host">
+                            </div>
+                            <div class="form-group">
+                                <label for="user">用户名</label>
+                                <input type="text" name="user" value="jiuzhou" class="form-control" id="user" placeholder="User">
+                            </div>
+                            <div class="form-group">
+                                <label for="port">端口</label>
+                                <input type="text" name="port" value="27017" class="form-control" id="port" placeholder="Port">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">密码</label>
+                                <input type="password" name="password" value="jiuzhou" class="form-control" id="password" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="mechanism">认证方式</label>
+                                <select class="form-control" name="mechanism">
+                                    <option value="MONGODB-CR">MONGODB-CR</option>
+                                    <option value="SCRAM-SHA-1" selected>SCRAM-SHA-1</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-primary" type="submit" style="width: 100%;margin-top:20px;">登录</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+{{template "public"}}
+{{template "nav" .}}
+<div class="col-md-10 content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="coll-list">
+                {{$dbname := .dbname}}
+                <h1>{{$dbname}}</h1>
+                {{range $v := .collList}}
+                    <div class="coll">
+                        <i class="fa fa-table" aria-hidden="true"></i>
+                        <a href="/database/{{$dbname}}/collection/{{$v}}">{{$v}}</a>
+                    </div>
+                {{end}}
+            </div>
+            
+        </div>
+    </div>
+</div>
+{{template "footer"}}

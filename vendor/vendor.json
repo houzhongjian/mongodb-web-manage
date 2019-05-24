@@ -1,0 +1,43 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "H5YFYmUpnlLVKNBk+HXH/wYJLw4=",
+			"path": "github.com/gin-contrib/sessions",
+			"revision": "da25b7bed527d57b81599b0864e0f1a7241ea913",
+			"revisionTime": "2018-07-02T03:18:52Z"
+		},
+		{
+			"checksumSHA1": "eyvExzi+ADNi3cMXeld05hHhWkA=",
+			"path": "github.com/gin-contrib/sessions/cookie",
+			"revision": "da25b7bed527d57b81599b0864e0f1a7241ea913",
+			"revisionTime": "2018-07-02T03:18:52Z"
+		},
+		{
+			"checksumSHA1": "mEw/6SbQ3IUrQjTy4Aau7s3pSd8=",
+			"path": "github.com/gin-gonic/gin",
+			"revision": "37854ee10f7161843c338d9a9fa87f9398aacbbe",
+			"revisionTime": "2018-11-06T05:40:20Z"
+		},
+		{
+			"checksumSHA1": "7V7gIifyhRRucnUhbw7LZfSRPMs=",
+			"path": "github.com/gin-gonic/gin/binding",
+			"revision": "37854ee10f7161843c338d9a9fa87f9398aacbbe",
+			"revisionTime": "2018-11-06T05:40:20Z"
+		},
+		{
+			"checksumSHA1": "Y8Vu2NT4c2ve963fedBxoJyiU6s=",
+			"path": "github.com/gin-gonic/gin/internal/json",
+			"revision": "37854ee10f7161843c338d9a9fa87f9398aacbbe",
+			"revisionTime": "2018-11-06T05:40:20Z"
+		},
+		{
+			"checksumSHA1": "afLqBfX9SeIP6eeTZb3WwdTFaOo=",
+			"path": "github.com/gin-gonic/gin/render",
+			"revision": "37854ee10f7161843c338d9a9fa87f9398aacbbe",
+			"revisionTime": "2018-11-06T05:40:20Z"
+		}
+	],
+	"rootPath": "dbclient.net/web/mongodb"
+}
