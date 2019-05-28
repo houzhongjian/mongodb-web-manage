@@ -1,7 +1,7 @@
 package main
 
 import (
-	"dbclient.net/web/mongodb/app/core"
+	"github.com/houzhongjian/mongodb-web-manage/app/core"
 )
 
 func main() {

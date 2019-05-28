@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"dbclient.net/web/mongodb/app/filter"
-	"dbclient.net/web/mongodb/app/service"
+	"github.com/houzhongjian/mongodb-web-manage/app/filter"
+	"github.com/houzhongjian/mongodb-web-manage/app/service"
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-contrib/sessions/cookie"

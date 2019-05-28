@@ -1,8 +1,8 @@
 package service
 
 import (
-	"dbclient.net/web/mongodb/app/library"
-	"dbclient.net/web/mongodb/app/utils"
+	"github.com/houzhongjian/mongodb-web-manage/app/library"
+	"github.com/houzhongjian/mongodb-web-manage/app/utils"
 )
 
 //Service .

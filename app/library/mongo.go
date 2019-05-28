@@ -6,7 +6,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"dbclient.net/web/mongodb/app/db"
+	"github.com/houzhongjian/mongodb-web-manage/app/db"
 )
 
 //Mgo .
