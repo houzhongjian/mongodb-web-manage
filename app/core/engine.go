@@ -1,7 +1,7 @@
 package core
 
 import (
-	"dbclient.net/web/mongodb/app/service"
+	"github.com/houzhongjian/mongodb-web-manage/app/service"
 	"github.com/gin-gonic/gin"
 )
 
